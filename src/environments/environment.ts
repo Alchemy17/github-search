@@ -4,5 +4,6 @@
 // The list of which env maps to which file can be found in `.angular-cli.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  apiUrl: "https://api.github.com/users/alchemy17/?access_token=5cde94a9d7f6cb69965f644824a1e582cc9b3539"
 };
