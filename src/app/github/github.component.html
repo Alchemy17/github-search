@@ -1,6 +1,11 @@
-<div class="jumbotron">
-  <h1>The github Search Engine is Here</h1>
-</div>
+<body>
+  <div class="container">
+  <div class="jumbotron">
+        <h1 class="display-3">The Github Search Engine</h1>
+        <p>Welcome to the web app. This app will display all the users on github and their repo after searching. And after clicking on a particular repo, it will take you to the specified link</p>
+        <p><a class="btn btn-primary btn-lg" href="http://www.github.com" target="_blank" role="button">Learn more &raquo;</a></p>
+    </div>
+    </div>
 <form class="container bar" action="index.html" method="post">
   <div class="form-group">
     <input type="text" name="" value="" class="form-control" placeholder="Input username Here" [(ngModel)]="username" name="username" (keyup)="searchUser()">
@@ -66,3 +71,4 @@
     </div>
   </div>
 </div>
+</body>

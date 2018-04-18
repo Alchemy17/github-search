@@ -11,6 +11,16 @@ export class GithubComponent implements OnInit {
   repos: any[];
   username:string;
   constructor(private githubService: GithubService) {
+    this.username = "alchemy17";
+    this.githubService.updateUser(this.username);
+    this.githubService.getUserInfo().subscribe(user =>{
+      console.log(user);
+      this.user = user;
+    });
+    this.githubService.getUserRepos().subscribe(repos =>{
+      console.log(repos);
+      this.repos = repos;
+    });
    }
 
    searchUser(){
